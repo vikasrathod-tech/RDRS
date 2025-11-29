@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get Quote | RDR'S Security Force</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="quote-page">
+
+  <header class="header">
+    <div class="container">
+      <div class="logo-container">
+        <img src="RDR LOGO 2.png" alt="Logo" class="logo-img">
+        <h1 class="logo-text">RDR'S SECURITY FORCE</h1>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Back to Home</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="quote-hero">
+    <div class="container">
+      <h1>Get Your Free Security Quote in 60 Seconds</h1>
+      <p>Tell us your needs — we'll send you a customized plan & pricing instantly!</p>
+    </div>
+  </section>
+
+  <section class="quote-form-section">
+    <div class="container">
+      <form id="quoteForm" class="quote-form">
+        <div class="form-grid">
+          <input type="text" name="name" placeholder="Full Name *" required>
+          <input type="tel" name="phone" placeholder="Phone Number *" required>
+          <input type="email" name="email" placeholder="Email Address *" required>
+          <select name="service" required>
+            <option value="">Select Service *</option>
+            <option>Residential Society Security</option>
+            <option>Commercial Building</option>
+            <option>Industrial / Factory</option>
+            <option>Event Security</option>
+            <option>VIP / Personal Bodyguard</option>
+            <option>CCTV Installation & Monitoring</option>
+            <option>Other</option>
+          </select>
+          <input type="text" name="location" placeholder="Location (City/Area) *" required>
+          <input type="number" name="guards" placeholder="No. of Guards Needed" min="1">
+        </div>
+        <textarea name="message" rows="5" placeholder="Additional Requirements (Optional)"></textarea>
+        <button type="submit" class="btn primary large">Get My Free Quote Now</button>
+      </form>
+
+      <div class="trust-badges">
+        <div class="badge"><i class="fas fa-check-circle"></i> PSARA Licensed</div>
+        <div class="badge"><i class="fas fa-check-circle"></i> 500+ Happy Clients</div>
+        <div class="badge"><i class="fas fa-check-circle"></i> 24/7 Support</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 RDR'S Security Force Pvt Ltd • Pune, Maharashtra • Call: +91 90284 82006</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('quoteForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you! Your quote request has been received. We will contact you within 10 minutes.');
+      // Here you can connect to Formspree, EmailJS, or your backend
+    });
+  </script>
+</body>
+</html>
